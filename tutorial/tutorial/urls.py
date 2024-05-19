@@ -1,7 +1,11 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from quickstart import views  # todo. why?
+import sys
+print(sys.path)
+import os
+print(os.getenv('PYTHONPATH'))
+from _tutorial.quickstart import views  # todo. why?
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
