@@ -1,10 +1,6 @@
 from django.urls import include, path
 from rest_framework import routers
 
-import sys
-print(sys.path)
-import os
-print(os.getenv('PYTHONPATH'))
 from _tutorial.quickstart import views  # add the project root to PYTHONPATH to make this symlink work. this is to disambiguate the import statement.
 
 router = routers.DefaultRouter()
