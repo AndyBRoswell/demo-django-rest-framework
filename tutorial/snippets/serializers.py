@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+from .models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES  # don't use `from tutorial.snippets.models import ...`
 
 
 class SnippetSerializer(serializers.Serializer):
